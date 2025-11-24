@@ -1,0 +1,10 @@
+from .face_shape_rules import FACE_SHAPE_RECOMMENDATIONS
+from .hair_type_rules import HAIR_TYPE_RECOMMENDATIONS
+from .style_profiles import STYLE_PROFILES, HAIR_STYLES_DETAILED
+
+__all__ = [
+    'FACE_SHAPE_RECOMMENDATIONS',
+    'HAIR_TYPE_RECOMMENDATIONS',
+    'STYLE_PROFILES',
+    'HAIR_STYLES_DETAILED'
+]

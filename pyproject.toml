@@ -1,0 +1,16 @@
+[project]
+name = "hair-recommendation-agent"
+version = "0.1.0"
+description = "Advanced hairstyle recommendation agent with rule-based scoring"
+authors = [{name = "Manolo Salsas", email = "manolez@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "agent-core-framework @ git+ssh://git@github.com/msalsas/agent-core-framework.git",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "flake8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
