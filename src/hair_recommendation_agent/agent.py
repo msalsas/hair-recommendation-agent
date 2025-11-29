@@ -62,6 +62,15 @@ class HairRecommendationAgent(BaseAgent):
                 agent_name=self.name
             )
 
+    def get_info(self) -> Dict[str, Any]:
+        base_info = super().get_info()
+        base_info.update({
+            "api_client": self.client.__class__.__name__,
+            "api_client_base_url": getattr(self.client, "base_url", None),
+            "note": "Accepts free-form descriptive hair_style and hair_color strings, and also supports structured fields: face_shape, hair_type, personal_style, age_group, gender, hair_length"
+        })
+        return base_info
+
     def _get_hairstyle_recommendations(self, payload: Dict[str, Any]) -> AgentResponse:
         """Get advanced hairstyle recommendations with scoring"""
         face_shape = payload.get('face_shape')
