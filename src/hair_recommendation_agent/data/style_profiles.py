@@ -50,6 +50,13 @@ STYLE_PROFILES = {
         "hair_lengths": ["short", "medium", "long"],
         "maintenance_level": "low",
         "styling_time": "5-15 minutes"
+    },
+    "versatile": {
+        "description": "Adaptable styles suitable for various occasions",
+        "recommended_styles": ["long_layers", "textured_bob", "curtain_bangs", "soft_waves", "blunt_bob"],
+        "hair_lengths": ["short", "medium", "long"],
+        "maintenance_level": "medium",
+        "styling_time": "10-20 minutes"
     }
 }
 
